@@ -112,6 +112,6 @@ pwsh -NoProfile -File scripts/test-install.ps1
 
 ## 分发状态
 
-本仓提供整理后的通用研发资产；尚未选择正式许可证。
-在许可证确定前，本仓不授予开源许可证权利。依赖许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+本项目采用 [Apache License 2.0](LICENSE)。你可以在遵守许可证条款的前提下使用、修改和分发本项目。
+第三方依赖许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 抽取边界与验证记录见 [公开整理说明](docs/PUBLIC_EXTRACTION.md)。
