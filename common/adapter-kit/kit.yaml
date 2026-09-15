@@ -1,0 +1,37 @@
+# 产品适配套件：安装器与 Agent 的共同目录。
+# 无产品包时只安装本目录中的说明/模板，不预列任何模块 Skill 文件名。
+version: 1
+assets:
+  - id: product-adapter
+    dest: .claude/product.yaml
+    template: product.yaml.tpl
+    prompt: prompts/generate-product-adapter.md
+    when: step-1
+  - id: module-skills
+    dest: .claude/skills/{name}/
+    template: module-skill/SKILL.md.tpl
+    prompt: prompts/generate-module-skill.md
+    when: step-2
+    note: >
+      安装器不知道本仓有哪些模块。Agent 必须先扫描再提议名单，
+      经用户确认后才写入。禁止套用其他产品的 Skill 目录名。
+  - id: product-rules
+    dest: .claude/rules/{file}.md
+    template: product-rule.md.tpl
+    prompt: prompts/generate-product-rules.md
+    when: step-3
+    note: >
+      通用规则（协作、文档治理）已在 common 层安装。
+      单测/三轴审查 Skill 也在 common，不在本步生成。
+forbidden:
+  - 只使用用户指定的产品 ID 与当前项目已验证的模块和规则；不得复用其他产品的专用资产。
+  - 只使用用户指定的产品 ID 与当前项目已验证的模块和规则；不得复用其他产品的专用资产。
+  - 生成假的模块 Skill 目录却无本仓证据
+  - 安装器自行调用模型
+common_already_installed:
+  skills:
+    - unit-test
+    - code-review
+  rules:
+    - ai-human-collab-v05.md
+    - doc-governance.md

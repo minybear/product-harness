@@ -1,0 +1,7 @@
+{
+  "name": "design-fingerprint",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "test": "node --test fingerprint.test.cjs continuation-contract.test.cjs" },
+  "dependencies": { "yaml": "1.10.2" }
+}

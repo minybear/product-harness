@@ -1,0 +1,4 @@
+interface:
+  display_name: "聚合详细设计"
+  short_description: "将完整、指纹匹配的来源集合编译为 hash 绑定的自包含 03A"
+  default_prompt: "Use $aggregate-design to compile the complete set of check-design-passed, hash-matching source designs into one self-contained 03A. Bind artifact and source-set hashes, forbid partial task approval, and do not invent contracts or start a new requirement interview."

@@ -1,0 +1,33 @@
+{
+  "id": "common",
+  "skills": [
+    "ai-collab-start",
+    "analyze-requirement",
+    "init-project-docs",
+    "design-solution",
+    "make-decision-card",
+    "check-design",
+    "aggregate-design",
+    "implement-change",
+    "verify-delivery",
+    "write-plan",
+    "write-ai-trace",
+    "write-worklog",
+    "write-issue",
+    "unit-test",
+    "code-review"
+  ],
+  "rules": [
+    "ai-human-collab-v05.md",
+    "doc-governance.md"
+  ],
+  "adapter": "adapters/00-claude-entry.mdc",
+  "tools": [
+    "tools/design-fingerprint/fingerprint.cjs",
+    "tools/design-fingerprint/package.json",
+    "tools/design-fingerprint/package-lock.json",
+    "tools/design-fingerprint/README.md",
+    "tools/design-fingerprint/fingerprint.test.cjs",
+    "tools/design-fingerprint/continuation-contract.test.cjs"
+  ]
+}

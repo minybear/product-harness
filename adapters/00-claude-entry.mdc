@@ -1,0 +1,13 @@
+---
+description: AI Collab Hub Claude-first 项目入口；所有项目规则和 Skill 由 CLAUDE.md 路由
+alwaysApply: true
+---
+
+# AI Collab Hub AI 统一入口
+
+开始任何非低风险一次性问答前，先读取项目根目录 `CLAUDE.md`。`CLAUDE.md` 是本项目唯一的流程、授权、阶段和规则路由入口。
+
+- 按 `CLAUDE.md` 的任务阶段和模块路由，读取 `.claude/rules/` 与 `.claude/skills/` 中的 canonical 内容。
+- 不在 `.cursor/rules/` 或 `.cursor/skills/` 维护第二套规则、Skill 正文或模板。
+- 不绕过需求访谈、阶段交接、授权、正式设计、验证和归档门控。
+- Cursor 只负责读取项目共享文件并按 `CLAUDE.md` 作业；本规则不调用 Claude，也不复制 Claude 的规则内容。
